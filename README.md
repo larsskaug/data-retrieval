@@ -23,11 +23,11 @@ SCRIPT_PATH=/Users/larsskaug/data-retrieval
 PY=/opt/homebrew/bin/python3
 
 # Fetch the price of a BigMac in Turkey
-0 9 * * * * time $PY $SCRIPT_PATH/scrape_mcdonalds_turkey.py > $SCRIPT_PATH/scrape_mcdonalds_turkey.log 2>&1
+0 9 * * * * time $PY $SCRIPT_PATH/scrape_mcdonalds_turkey.py > $SCRIPT_PATH/logs/scrape_mcdonalds_turkey.log 2>&1
 
 # Fetch the price of Yerba Mate in Argentina
-0 10 * * * * time $PY $SCRIPT_PATH/scrape_carrefour_argentina.py > $SCRIPT_PATH/scrape_carrefour_argentina.log 2>&1
+0 10 * * * * time $PY $SCRIPT_PATH/scrape_carrefour_argentina.py > $SCRIPT_PATH/logs/scrape_carrefour_argentina.log 2>&1
 
 # Fetch the price of a BigMac in Argentina
-0 11  * * * * time $PY $SCRIPT_PATH/scrape_mcdonalds_argentina.py > $SCRIPT_PATH/scrape_mcdonalds_argentina.log 2>&1
+0 11  * * * * time $PY $SCRIPT_PATH/scrape_mcdonalds_argentina.py > $SCRIPT_PATH/logs/scrape_mcdonalds_argentina.log 2>&1
 ```
