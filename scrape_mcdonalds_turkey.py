@@ -1,5 +1,3 @@
-#!/usr/bin/env python3
-
 from datetime import datetime, timedelta
 from selenium import webdriver
 from selenium.webdriver.firefox.options import Options as FirefoxOptions

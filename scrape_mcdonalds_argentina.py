@@ -1,5 +1,3 @@
-#!/usr/bin/env python3
-
 from selenium import webdriver
 from selenium.webdriver.firefox.options import Options as FirefoxOptions
 from selenium.webdriver.firefox.service import Service as FirefoxService
