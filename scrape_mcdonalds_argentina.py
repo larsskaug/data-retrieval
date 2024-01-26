@@ -70,33 +70,32 @@ def scrape_mcdonalds_argentina():
 
     wait = WebDriverWait(driver, 300)  # Adjust the timeout as needed
 
-    url = 'https://www.mcdonalds.com.ar/pedidos/pickup/6197a021c6ad5fc316abd9e7/menu/sandwiches/big-mac'
+    url = 'https://www.mcdonalds.com.ar/pedidos/seleccionar-restaurante'
 
     driver.get(url)
-
-    sleep(10) # Adding explicit time due to failure
-    elige_pedido_button = wait.until(EC.element_to_be_clickable((By.XPATH, '//button[contains(text(), "Elige tu tipo de pedido")]')))
-    elige_pedido_button.click()
-
-    comenzar_pedido_button = wait.until(EC.element_to_be_clickable((By.XPATH, '//button[contains(text(), "Comenzar pedido")]')))
-    comenzar_pedido_button.click()
-
-    sleep(5) # Adding explicit time due to failure
+    
+    # Pick a restaurant
     addr_input = wait.until(EC.element_to_be_clickable((By.XPATH, "//input[@placeholder='Escribe tu ciudad o tu dirección']")))
     addr_input.send_keys("Avenida Cabildo 2254, Buenos Aires")
     addr_input.send_keys(Keys.RETURN)
-
+    
+    # Select chosen restaurant
     restaurant_selection_button = wait.until(EC.element_to_be_clickable((By.CSS_SELECTOR, ".mcd-restaurant-d-actions .button.is-primary")))
     restaurant_selection_button.click()
+    
+    # click hamburguesas
+    hamburguesas = wait.until(EC.element_to_be_clickable((By.XPATH, f"//div[contains(text(), 'Hamburguesas')]")))
+    hamburguesas.click()
+    
+    # Click Big Mac
+    hamburguesas = wait.until(EC.element_to_be_clickable((By.XPATH, f"//div[contains(text(), 'Big Mac')]")))
+    hamburguesas.click()
 
-    sleep(10) # Adding explicit time due to failure
-    sandwiches_div = wait.until(EC.element_to_be_clickable((By.XPATH, '//div[contains(text(), "Sandwiches")]')))
-    sandwiches_div.click()
-
-    big_mac_div = wait.until(EC.visibility_of_element_located((By.XPATH, '//div[contains(text(), "Big Mac")]')))
-    big_mac_price = big_mac_div.find_element(By.XPATH, "following-sibling::div")
+    # Pick out the price of the Big Mac
+    big_mac_div = wait.until(EC.visibility_of_element_located((By.XPATH, '//h4[contains(text(), "Big Mac")]')))
+    big_mac_price = big_mac_div.find_element(By.XPATH, "following-sibling::h5")
     big_mac_price = big_mac_price.text.replace("$", "").replace(",", ".").replace(".", "")
-            
+                
     credentials = read_credentials(os.path.join(home_directory, "credentials/aws.credentials"))
 
     # Initialize a Boto3 session
