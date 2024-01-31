@@ -88,8 +88,8 @@ def scrape_mcdonalds_argentina():
     hamburguesas.click()
     
     # Click Big Mac
-    hamburguesas = wait.until(EC.element_to_be_clickable((By.XPATH, f"//div[contains(text(), 'Big Mac')]")))
-    hamburguesas.click()
+    bigmac = wait.until(EC.element_to_be_clickable((By.XPATH, f"//div[contains(text(), 'Big Mac')]")))
+    bigmac.click()
 
     # Pick out the price of the Big Mac
     big_mac_div = wait.until(EC.visibility_of_element_located((By.XPATH, '//h4[contains(text(), "Big Mac")]')))
