@@ -1,4 +1,5 @@
 from selenium import webdriver
+import geckodriver_autoinstaller
 from selenium.webdriver.firefox.options import Options as FirefoxOptions
 from selenium.webdriver.firefox.service import Service as FirefoxService
 from selenium.webdriver.common.keys import Keys
@@ -13,6 +14,7 @@ import boto3
 import json
 import os
 
+geckodriver_autoinstaller.install()
 
 def read_credentials(file_path):
     with open(file_path, 'r') as file:
@@ -43,14 +45,13 @@ def scrape_mcdonalds_argentina():
     home_directory = os.path.expanduser('~')
 
     # To address an issue caused by the Snap installation of Firefox
-    #tmp_dir = os.path.join(home_directory, 'tmp')
-    #os.environ['TMPDIR'] = tmp_dir
-    #os.system(f"rm -rf {tmp_dir}/*")
+    tmp_dir = os.path.join(home_directory, 'tmp')
+    os.environ['TMPDIR'] = tmp_dir
+    os.system(f"rm -rf {tmp_dir}/*")
 
-    #print(f"Does this command look right? rm -rf {tmp_dir}/*")
-
+    
     options = FirefoxOptions()
-    # options.binary = "/opt/homebrew/bin/firefox"
+    options.binary_location = "/usr/bin/firefox"
     options.add_argument("--headless")  # Run Firefox in headless mode
 
     options.add_argument("--width=2048")
