@@ -1,7 +1,8 @@
 from selenium import webdriver
-import geckodriver_autoinstaller
-from selenium.webdriver.firefox.options import Options as FirefoxOptions
-from selenium.webdriver.firefox.service import Service as FirefoxService
+from selenium import webdriver
+from selenium.webdriver.chrome.service import Service as ChromeService
+from selenium.webdriver.chrome.options import Options as ChromeOptions
+from selenium.webdriver.common.desired_capabilities import DesiredCapabilities
 from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
@@ -14,7 +15,6 @@ import boto3
 import json
 import os
 
-geckodriver_autoinstaller.install()
 
 def read_credentials(file_path):
     with open(file_path, 'r') as file:
@@ -38,33 +38,43 @@ def write_string_to_s3(session, bucket_name, object_key, string_data, attempt=1,
             raise
 
 def scrape_mcdonalds_argentina():
-
     country = 'ar'
 
     # Get the user's home directory
     home_directory = os.path.expanduser('~')
 
-    # To address an issue caused by the Snap installation of Firefox
-    tmp_dir = os.path.join(home_directory, 'tmp')
-    os.environ['TMPDIR'] = tmp_dir
-    os.system(f"rm -rf {tmp_dir}/*")
+    options = ChromeOptions()
+    options.add_argument("--headless")  # Run Chromium in headless mode
+    options.add_argument("--window-size=2048,2048")
 
-    
-    options = FirefoxOptions()
-    options.binary_location = "/usr/bin/firefox"
-    options.add_argument("--headless")  # Run Firefox in headless mode
+    options.add_argument("--disable-blink-features=AutomationControlled")
+    options.add_argument("--no-sandbox")
+    options.add_argument("--disable-dev-shm-usage")
+    options.add_argument("--disable-gpu")
+    options.add_argument("--disable-software-rasterizer")
+    options.add_argument("user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36")
 
-    options.add_argument("--width=2048")
-    options.add_argument("--height=2048")
+    options.binary_location = "/usr/bin/chromium-browser"  # Path to Chromium
 
-    # Set preferences for geolocation
-    options.set_preference("geo.enabled", True)
-    options.set_preference("geo.prompt.testing", True)
-    options.set_preference("geo.prompt.testing.allow", False)  # Set to True to allow geolocation
+    # Set geolocation preferences
+    capabilities = DesiredCapabilities.CHROME.copy()
+    capabilities['goog:chromeOptions'] = {
+        'prefs': {
+            'profile.default_content_setting_values.geolocation': 1  # Allow geolocation
+        }
+    }
 
-    # service = FirefoxService(executable_path=os.path.join(home_directory, "airflow/geckodriver"))
+    service = ChromeService(executable_path="/usr/lib/chromium-browser/chromedriver")
 
-    driver = webdriver.Firefox(options=options)
+    driver = webdriver.Chrome(service=service, options=options)
+
+    # Set geolocation coordinates (latitude, longitude, accuracy)
+    driver.execute_cdp_cmd("Emulation.setGeolocationOverride", {
+        "latitude": -34.56060895367534,
+        "longitude": -58.45812919702398,
+        "accuracy": 100
+    })
+
 
     size = driver.get_window_size()
     #print("Window size: width = {}px, height = {}px".format(size["width"], size["height"]))
@@ -74,29 +84,34 @@ def scrape_mcdonalds_argentina():
     url = 'https://www.mcdonalds.com.ar/pedidos/seleccionar-restaurante'
 
     driver.get(url)
-    
+
+    print("Opened a page with the following title:", driver.title)
+
     # Pick a restaurant
     addr_input = wait.until(EC.element_to_be_clickable((By.XPATH, "//input[@placeholder='Escribe tu ciudad o tu dirección']")))
     addr_input.send_keys("Avenida Cabildo 2254, Buenos Aires")
     addr_input.send_keys(Keys.RETURN)
-    
+
+
     # Select chosen restaurant
     restaurant_selection_button = wait.until(EC.element_to_be_clickable((By.CSS_SELECTOR, ".mcd-restaurant-d-actions .button.is-primary")))
     restaurant_selection_button.click()
-    
+
+    time.sleep(1)
+
     # click hamburguesas
     hamburguesas = wait.until(EC.element_to_be_clickable((By.XPATH, f"//div[contains(text(), 'Hamburguesas')]")))
     hamburguesas.click()
-    
+
     # Click Big Mac
-    hamburguesas = wait.until(EC.element_to_be_clickable((By.XPATH, f"//div[contains(text(), 'Big Mac')]")))
-    hamburguesas.click()
+    bigmac = wait.until(EC.element_to_be_clickable((By.XPATH, f"//div[contains(text(), 'Big Mac')]")))
+    bigmac.click()
 
     # Pick out the price of the Big Mac
     big_mac_div = wait.until(EC.visibility_of_element_located((By.XPATH, '//h4[contains(text(), "Big Mac")]')))
     big_mac_price = big_mac_div.find_element(By.XPATH, "following-sibling::h5")
     big_mac_price = big_mac_price.text.replace("$", "").replace(",", ".").replace(".", "")
-                
+
     credentials = read_credentials(os.path.join(home_directory, "credentials/aws.credentials"))
 
     # Initialize a Boto3 session
@@ -127,8 +142,7 @@ def scrape_mcdonalds_argentina():
     # Print (append) timestamp and price to file
     with open(os.path.join(home_directory,"bigmac-price-ar.txt"), "a") as f:
         f.write(json_string + "\n")
-    
-    
+
     # Close the driver
     driver.quit()
 

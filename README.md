@@ -12,6 +12,16 @@ All scripts write to a local file, but several also write to S3 buckets.
 - Python
 - an AWS credential file at the uses root (`~/credentials/aws.credentials`)
 
+# Chromium
+
+Chromium browser needs to be installed
+
+`sudo apt install chromium-browser`
+
+and
+
+`sudo apt-get install chromium-chromedriver`
+
 # Crontab
 
 The following shows an example crontab for the scripts in this repo. I run `crontab -e` as follows `EDITOR=nano crontab -e` because I'm more familar with nano.

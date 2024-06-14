@@ -1,10 +1,10 @@
-from datetime import datetime, timedelta
+from datetime import datetime
 from time import sleep
 
 from selenium import webdriver
-from selenium.webdriver.firefox.options import Options as FirefoxOptions
-from selenium.webdriver.firefox.service import Service as FirefoxService
-from selenium.webdriver.common.keys import Keys
+from selenium.webdriver.chrome.service import Service as ChromeService
+from selenium.webdriver.chrome.options import Options as ChromeOptions
+from selenium.webdriver.common.desired_capabilities import DesiredCapabilities
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
@@ -44,28 +44,37 @@ def scrape_carrefour():
     # Get the user's home directory
     home_directory = os.path.expanduser('~')
 
-    # To address an issue caused by the Snap installation of Firefox
-    #tmp_dir = os.path.join(home_directory, 'tmp')
-    #os.environ['TMPDIR'] = tmp_dir
-    #os.system(f"rm -rf {tmp_dir}/*")
+    options = ChromeOptions()
+    options.add_argument("--headless")  # Run Chromium in headless mode
+    options.add_argument("--window-size=2048,2048")
 
-    #print(f"Does this command look right? rm -rf {tmp_dir}/*")
+    options.add_argument("--disable-blink-features=AutomationControlled")
+    options.add_argument("--no-sandbox")
+    options.add_argument("--disable-dev-shm-usage")
+    options.add_argument("--disable-gpu")
+    options.add_argument("--disable-software-rasterizer")
+    options.add_argument("user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36")
 
-    options = FirefoxOptions()
-    # options.binary = "/opt/homebrew/bin/firefox"
-    options.add_argument("--headless")  # Run Firefox in headless mode
+    options.binary_location = "/usr/bin/chromium-browser"  # Path to Chromium
 
-    options.add_argument("--width=2048")
-    options.add_argument("--height=2048")
+    # Set geolocation preferences
+    capabilities = DesiredCapabilities.CHROME.copy()
+    capabilities['goog:chromeOptions'] = {
+        'prefs': {
+            'profile.default_content_setting_values.geolocation': 1  # Allow geolocation
+        }
+    }
 
-    # Set preferences for geolocation
-    options.set_preference("geo.enabled", True)
-    options.set_preference("geo.prompt.testing", True)
-    options.set_preference("geo.prompt.testing.allow", False)  # Set to True to allow geolocation
+    service = ChromeService(executable_path="/usr/lib/chromium-browser/chromedriver")
 
-    # service = FirefoxService(executable_path=os.path.join(home_directory, "airflow/geckodriver"))
+    driver = webdriver.Chrome(service=service, options=options)
 
-    driver = webdriver.Firefox(options=options)
+    # Set geolocation coordinates (latitude, longitude, accuracy)
+    driver.execute_cdp_cmd("Emulation.setGeolocationOverride", {
+        "latitude": -34.56060895367534,
+        "longitude": -58.45812919702398,
+        "accuracy": 100
+    })
 
     size = driver.get_window_size()
     #print("Window size: width = {}px, height = {}px".format(size["width"], size["height"]))
