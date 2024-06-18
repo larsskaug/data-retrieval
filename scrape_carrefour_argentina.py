@@ -1,127 +1,30 @@
-from datetime import datetime
-from time import sleep
-
-from selenium import webdriver
-from selenium.webdriver.chrome.service import Service as ChromeService
-from selenium.webdriver.chrome.options import Options as ChromeOptions
-from selenium.webdriver.common.desired_capabilities import DesiredCapabilities
+from webscrape_utils import read_credentials, write_string_to_s3, setup_driver, get_aws_session, upload_to_s3, write_to_local_file
 from selenium.webdriver.common.by import By
+from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
-
-import os
-import time
-import boto3
-import json
-
-from botocore.exceptions import BotoCoreError, ClientError
-
-def read_credentials(file_path):
-    with open(file_path, 'r') as file:
-        return {key.strip(): value.strip() for key, value in 
-                (line.strip().split(' ', 1) for line in file)}
-
-def write_string_to_s3(session, bucket_name, object_key, string_data, attempt=1, max_attempts=2):
-    s3 = session.resource('s3')
-    object = s3.Object(bucket_name, object_key)
-
-    try:
-        object.put(Body=string_data)
-        print(f"Successfully uploaded data to {bucket_name}/{object_key}")
-    except (BotoCoreError, ClientError) as e:
-        if attempt < max_attempts:
-            print(f"Failed to upload data on attempt {attempt}: {e}. Retrying...")
-            time.sleep(2 ** attempt)  # Exponential backoff
-            write_string_to_s3(session, bucket_name, object_key, string_data, attempt + 1, max_attempts)
-        else:
-            print(f"Failed to upload data after {max_attempts} attempts: {e}")
-            raise
+from time import sleep
 
 def scrape_carrefour():
-
     country = 'ar'
 
-    # Get the user's home directory
-    home_directory = os.path.expanduser('~')
-
-    options = ChromeOptions()
-    options.add_argument("--headless")  # Run Chromium in headless mode
-    options.add_argument("--window-size=2048,2048")
-
-    options.add_argument("--disable-blink-features=AutomationControlled")
-    options.add_argument("--no-sandbox")
-    options.add_argument("--disable-dev-shm-usage")
-    options.add_argument("--disable-gpu")
-    options.add_argument("--disable-software-rasterizer")
-    options.add_argument("user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36")
-
-    options.binary_location = "/usr/bin/chromium-browser"  # Path to Chromium
-
-    # Set geolocation preferences
-    capabilities = DesiredCapabilities.CHROME.copy()
-    capabilities['goog:chromeOptions'] = {
-        'prefs': {
-            'profile.default_content_setting_values.geolocation': 1  # Allow geolocation
-        }
-    }
-
-    service = ChromeService(executable_path="/usr/lib/chromium-browser/chromedriver")
-
-    driver = webdriver.Chrome(service=service, options=options)
-
-    # Set geolocation coordinates (latitude, longitude, accuracy)
-    driver.execute_cdp_cmd("Emulation.setGeolocationOverride", {
-        "latitude": -34.56060895367534,
-        "longitude": -58.45812919702398,
-        "accuracy": 100
-    })
-
-    size = driver.get_window_size()
-    #print("Window size: width = {}px, height = {}px".format(size["width"], size["height"]))
-
-    wait = WebDriverWait(driver, 300)  # Adjust the timeout as needed
+    driver = setup_driver()
 
     url = "https://www.carrefour.com.ar/yerba-mate-de-campo-origen-controlado-la-merced-500-g/p"
-
     driver.get(url)
 
-    sleep(10) # Adding explicit time due to failure
+    sleep(10)  # Adding explicit time due to failure
     product_description = driver.find_element(By.CSS_SELECTOR, "span[class='vtex-store-components-3-x-productBrand vtex-store-components-3-x-productBrand--quickview ']")
     price_element = driver.find_element(By.CSS_SELECTOR, "[class$='valtech-carrefourar-product-price-0-x-sellingPriceValue']")
     price_text = price_element.text.strip().replace("$", "").replace(",", ".").replace(".", "")
-                
-    credentials = read_credentials(os.path.join(home_directory, "credentials/aws.credentials"))
 
-    # Initialize a Boto3 session
-    session = boto3.Session(
-        aws_access_key_id=credentials['AWS_ACCESS_KEY_ID'],
-        aws_secret_access_key=credentials['AWS_SECRET_ACCESS_KEY'],
-        region_name=credentials['AWS_DEFAULT_REGION']
-    )
+    product_name = "yerba-mate"
+    price = float(price_text) / 100
 
-    # Your JSON data
-    json_data = {
-        "country": country,
-        "ts": datetime.now().isoformat(),
-        "product": product_description.text.strip(),
-        "price": float(price_text)/100,
-    }
+    session = get_aws_session("credentials/aws.credentials")
+    json_string = upload_to_s3(session, country, product_name, price)
+    write_to_local_file("yerba-mate-price-ar.txt", json_string)
 
-    json_string = json.dumps(json_data)
-
-    # Write the JSON string to S3
-    bucket_name = 'prices-for-inflation-estimation'
-    object_key = f'inflation/yerba-mate/yerba-mate-price-{country}-{datetime.now().isoformat()}.json'
-
-    write_string_to_s3(session, bucket_name, object_key, json_string)
-
-    print(f"JSON data uploaded to {bucket_name}/{object_key}")
-
-    # Print (append) timestamp and price to file
-    with open(os.path.join(home_directory,"yerba-mate-price-ar.txt"), "a") as f:
-        f.write(json_string + "\n")
-    
-    
     # Close the driver
     driver.quit()
 

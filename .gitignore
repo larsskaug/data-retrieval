@@ -2,3 +2,4 @@ logs/*
 geckodriver.log
 .ipynb*
 .venv
+__pycache__

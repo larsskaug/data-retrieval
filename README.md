@@ -26,18 +26,17 @@ and
 
 The following shows an example crontab for the scripts in this repo. I run `crontab -e` as follows `EDITOR=nano crontab -e` because I'm more familar with nano.
 
-
 ```
 PATH=/usr/local/bin:/usr/bin:/bin:/usr/sbin
-SCRIPT_PATH=/home/lars/data_retrieval
-PY=/home/lars/data_retrieval/.venv/bin/python
+SCRIPT_PATH=/home/lars/data-retrieval
+PY=$SCRIPT_PATH/.venv/bin/python
 
 # Fetch the price of a BigMac in Turkey
-0 9 * * * time $PY $SCRIPT_PATH/scrape_mcdonalds_turkey.py > $SCRIPT_PATH/logs/scrape_mcdonalds_turkey.log 2>&1
+0 9 * * * $PY $SCRIPT_PATH/scrape_mcdonalds_turkey.py > $SCRIPT_PATH/logs/scrape_mcdonalds_turkey.log 2>&1
 
 # Fetch the price of Yerba Mate in Argentina
-0 10 * * * time $PY $SCRIPT_PATH/scrape_carrefour_argentina.py > $SCRIPT_PATH/logs/scrape_carrefour_argentina.log 2>&1
+0 10 * * * $PY $SCRIPT_PATH/scrape_carrefour_argentina.py > $SCRIPT_PATH/logs/scrape_carrefour_argentina.log 2>&1
 
 # Fetch the price of a BigMac in Argentina
-0 11 * * * time $PY $SCRIPT_PATH/scrape_mcdonalds_argentina.py > $SCRIPT_PATH/logs/scrape_mcdonalds_argentina.log 2>&1
+0 11 * * * $PY $SCRIPT_PATH/scrape_mcdonalds_argentina.py > $SCRIPT_PATH/logs/scrape_mcdonalds_argentina.log 2>&1
 ```
