@@ -13,36 +13,15 @@ def scrape_mcdonalds_argentina():
 
     wait = WebDriverWait(driver, 300)  # Adjust the timeout as needed
 
-    url = 'https://www.mcdonalds.com.ar/pedidos/seleccionar-restaurante'
+    url = 'https://www.mcdonalds.com.ar/restaurantes/ciudad-autonoma-de-buenos-aires/cabildo-y-olazabal-bel/pedidos/pedi-y-retira/hamburguesas'
     driver.get(url)
-
-    print("Opened a page with the following title:", driver.title)
-
-    time.sleep(1)
-
-    # Pick a restaurant
-    addr_input = wait.until(EC.element_to_be_clickable((By.XPATH, "//input[@placeholder='Escribe tu ciudad o tu dirección']")))
-    addr_input.send_keys("Avenida Cabildo 2254, Buenos Aires")
-    addr_input.send_keys(Keys.RETURN)
-
-    # Select chosen restaurant
-    restaurant_selection_button = wait.until(EC.element_to_be_clickable((By.CSS_SELECTOR, ".mcd-restaurant-d-actions .button.is-primary")))
-    restaurant_selection_button.click()
 
     sleep(1)
 
-    # click hamburguesas
-    hamburguesas = wait.until(EC.element_to_be_clickable((By.XPATH, "//div[contains(text(), 'Hamburguesas')]")))
-    hamburguesas.click()
+    big_mac_price = price_element = wait.until(EC.presence_of_element_located(
+    (By.XPATH, "//p[text()='Big Mac']/following-sibling::div//p[@class='font-bold']")))
 
-    # Click Big Mac
-    bigmac = wait.until(EC.element_to_be_clickable((By.XPATH, "//div[contains(text(), 'Big Mac')]")))
-    bigmac.click()
-
-    # Pick out the price of the Big Mac
-    big_mac_div = wait.until(EC.visibility_of_element_located((By.XPATH, '//h4[contains(text(), "Big Mac")]')))
-    big_mac_price = big_mac_div.find_element(By.XPATH, "following-sibling::h5")
-    big_mac_price = big_mac_price.text.replace("$", "").replace(",", ".").replace(".", "")
+    big_mac_price = big_mac_price.text.replace("$", "").replace(",", ".").replace(".", "")    
 
     big_mac_price = float(big_mac_price) / 100
 
