@@ -18,6 +18,8 @@ def scrape_mcdonalds_argentina():
 
     print("Opened a page with the following title:", driver.title)
 
+    time.sleep(1)
+
     # Pick a restaurant
     addr_input = wait.until(EC.element_to_be_clickable((By.XPATH, "//input[@placeholder='Escribe tu ciudad o tu dirección']")))
     addr_input.send_keys("Avenida Cabildo 2254, Buenos Aires")
