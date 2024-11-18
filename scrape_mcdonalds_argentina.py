@@ -26,7 +26,7 @@ def scrape_mcdonalds_argentina():
     big_mac_price = float(big_mac_price) / 100
 
     session = get_aws_session("credentials/aws.credentials")
-    json_string = upload_to_s3(session, country, "BigMac", big_mac_price)
+    json_string = upload_to_s3(session, country, "Big Mac", big_mac_price)
     write_to_local_file("bigmac-price-ar.txt", json_string)
 
     # Close the driver
