@@ -25,8 +25,10 @@ def scrape_carrefour():
     json_string = upload_to_s3(session, country, product_name, price)
     write_to_local_file("yerba-mate-price-ar.txt", json_string)
 
-    # Close the driver
-    driver.quit()
+    try:
+        driver.quit()
+    except Exception:
+        pass
 
 if __name__ == "__main__":
     scrape_carrefour()
