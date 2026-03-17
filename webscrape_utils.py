@@ -7,6 +7,7 @@ import json
 import time
 import boto3
 import os
+import shutil
 
 
 def read_credentials(file_path):
@@ -46,7 +47,17 @@ def setup_driver():
         'profile.default_content_setting_values.geolocation': 1
     })
 
-    service = ChromeService(executable_path="/snap/bin/chromium.chromedriver")
+    driver_candidates = [
+        shutil.which("chromedriver"),
+        shutil.which("chromium.chromedriver"),
+        "/snap/bin/chromium.chromedriver",
+        "/usr/bin/chromedriver",
+        "/usr/local/bin/chromedriver",
+    ]
+    driver_path = next((p for p in driver_candidates if p and os.path.isfile(p)), None)
+    if driver_path is None:
+        raise FileNotFoundError("chromedriver not found; install chromium-driver or chromedriver")
+    service = ChromeService(executable_path=driver_path)
     driver = webdriver.Chrome(service=service, options=options)
 
     driver.execute_cdp_cmd("Emulation.setGeolocationOverride", {
