@@ -11,7 +11,7 @@ def scrape_mcdonalds_argentina():
 
     driver = setup_driver()
 
-    wait = WebDriverWait(driver, 300)  # Adjust the timeout as needed
+    wait = WebDriverWait(driver, 15)
 
     url = 'https://www.mcdonalds.com.ar/restaurantes/ciudad-autonoma-de-buenos-aires/cabildo-y-olazabal-bel/pedidos/pedi-y-retira/hamburguesas'
     driver.get(url)
@@ -19,7 +19,7 @@ def scrape_mcdonalds_argentina():
     sleep(1)
 
     big_mac_price = price_element = wait.until(EC.presence_of_element_located(
-    (By.XPATH, "//p[text()='Big Mac']/following-sibling::div//p[@class='font-bold']")))
+    (By.XPATH, "//p[text()='Big Mac']/following-sibling::div")))
 
     big_mac_price = big_mac_price.text.replace("$", "").replace(",", ".").replace(".", "")    
 
