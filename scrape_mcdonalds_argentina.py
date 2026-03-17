@@ -21,7 +21,7 @@ def scrape_mcdonalds_argentina():
     big_mac_price = price_element = wait.until(EC.presence_of_element_located(
     (By.XPATH, "//p[text()='Big Mac']/following-sibling::div")))
 
-    big_mac_price = big_mac_price.text.replace("$", "").replace(",", ".").replace(".", "")    
+    big_mac_price = big_mac_price.text.split('\n')[0].strip().replace("$", "").replace(",", ".").replace(".", "")
 
     big_mac_price = float(big_mac_price) / 100
 
