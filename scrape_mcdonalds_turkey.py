@@ -20,7 +20,7 @@ def scrape_mcdonalds_turkey():
     big_mac_price = float(price_element.text.split('.')[0])
 
     session = get_aws_session("credentials/aws.credentials")
-    json_string = upload_to_s3(session, country, "BigMac", big_mac_price)
+    json_string = upload_to_s3(session, country, "Big Mac", big_mac_price)
     write_to_local_file("bigmac-price-tr.txt", json_string)
 
     try:
