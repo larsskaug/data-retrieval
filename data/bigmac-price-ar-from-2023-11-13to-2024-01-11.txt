@@ -33,7 +33,6 @@
 {"country": "ar", "ts": "2023-12-13T10:31:38.759134", "product": "Big Mac", "price":2850.00}
 {"country": "ar", "ts": "2023-12-13T10:32:50.862115", "product": "Big Mac", "price":2850.00}
 {"country": "ar", "ts": "2023-12-14T13:00:19.838050", "product": "Big Mac", "price":2850.00}
-{"country": "ar", "ts": "2023-12-16T15:00:10.194023", "product": "Big Mac", "price":4799.00}
 {"country": "ar", "ts": "2023-12-16T15:01:27.145165", "product": "Big Mac", "price":2850.00}
 {"country": "ar", "ts": "2023-12-16T15:08:38.921824", "product": "Big Mac", "price":2850.00}
 {"country": "ar", "ts": "2023-12-17T14:48:48.035682", "product": "Big Mac", "price":2850.00}
@@ -59,14 +58,12 @@
 {"country": "ar", "ts": "2024-01-03T19:14:57.879312", "product": "Big Mac", "price":3250.00}
 {"country": "ar", "ts": "2024-01-03T19:21:36.879160", "product": "Big Mac", "price":3250.00}
 {"country": "ar", "ts": "2024-01-03T19:23:11.893456", "product": "Big Mac", "price":3250.00}
-{"country": "ar", "ts": "2024-01-03T19:24:13.340951", "product": "Big Mac", "price":5599.00}
 {"country": "ar", "ts": "2024-01-03T19:25:42.917379", "product": "Big Mac", "price":3250.00}
 {"country": "ar", "ts": "2024-01-03T19:26:57.610475", "product": "Big Mac", "price":3250.00}
 {"country": "ar", "ts": "2024-01-03T19:27:58.896903", "product": "Big Mac", "price":3250.00}
 {"country": "ar", "ts": "2024-01-03T19:29:14.038034", "product": "Big Mac", "price":3250.00}
 {"country": "ar", "ts": "2024-01-03T19:30:27.328053", "product": "Big Mac", "price":5599.00}
 {"country": "ar", "ts": "2024-01-04T20:00:47.179249", "product": "Big Mac", "price":3700.00}
-{"country": "ar", "ts": "2024-01-04T20:02:19.188294", "product": "Big Mac", "price":6399.00}
 {"country": "ar", "ts": "2024-01-04T20:15:56.821459", "product": "Big Mac", "price":3700.00}
 {"country": "ar", "ts": "2024-01-04T22:29:39.918478", "product": "Big Mac", "price":3700.00}
 {"country": "ar", "ts": "2024-01-06T15:53:26.629838", "product": "Big Mac", "price":3700.00}

@@ -1,447 +1,573 @@
 [
     {
         "country": "ar",
-        "ts": "2023-11-13T21:10:21.815201",
+        "ts": "2024-11-18T11:00:06.146890",
         "product": "Big Mac",
-        "price": 2300.00
+        "price": 7200.0
     },
     {
         "country": "ar",
-        "ts": "2023-11-14T10:16:22.975441",
+        "ts": "2024-11-19T11:00:06.723295",
         "product": "Big Mac",
-        "price": 2650.00
+        "price": 7200.0
     },
     {
         "country": "ar",
-        "ts": "2023-11-15T10:16:22.975441",
+        "ts": "2024-11-20T11:00:08.076089",
         "product": "Big Mac",
-        "price": 2650.00
+        "price": 7200.0
     },
     {
         "country": "ar",
-        "ts": "2023-11-16T10:16:22.975441",
+        "ts": "2024-11-21T11:00:08.213007",
         "product": "Big Mac",
-        "price": 2650.00
+        "price": 7200.0
     },
     {
         "country": "ar",
-        "ts": "2023-11-17T10:16:22.975441",
+        "ts": "2024-11-22T11:00:06.998552",
         "product": "Big Mac",
-        "price": 2650.00
+        "price": 7200.0
     },
     {
         "country": "ar",
-        "ts": "2023-11-18T10:16:22.975441",
+        "ts": "2024-11-23T11:00:07.231272",
         "product": "Big Mac",
-        "price": 2650.00
+        "price": 7200.0
     },
     {
         "country": "ar",
-        "ts": "2023-11-19T12:37:55.486987",
+        "ts": "2024-11-23T13:18:33.833867",
         "product": "Big Mac",
-        "price": 2650.00
+        "price": 7200.0
     },
     {
         "country": "ar",
-        "ts": "2023-11-20T10:06:12.684833",
+        "ts": "2024-11-25T11:00:06.871535",
         "product": "Big Mac",
-        "price": 2650.00
+        "price": 7200.0
     },
     {
         "country": "ar",
-        "ts": "2023-11-21T21:54:49.251404",
+        "ts": "2024-11-26T11:00:07.380580",
         "product": "Big Mac",
-        "price": 2650.00
+        "price": 7200.0
     },
     {
         "country": "ar",
-        "ts": "2023-11-22T12:47:50.156274",
+        "ts": "2024-11-27T11:00:06.250619",
         "product": "Big Mac",
-        "price": 2650.00
+        "price": 7200.0
     },
     {
         "country": "ar",
-        "ts": "2023-11-23T12:30:27.525739",
+        "ts": "2024-11-28T11:00:08.906650",
         "product": "Big Mac",
-        "price": 2650.00
+        "price": 7200.0
     },
     {
         "country": "ar",
-        "ts": "2023-11-24T12:30:27.525739",
+        "ts": "2024-11-29T11:00:06.818577",
         "product": "Big Mac",
-        "price": 2650.00
+        "price": 7200.0
     },
     {
         "country": "ar",
-        "ts": "2023-11-25T10:01:01.307363",
+        "ts": "2024-11-30T11:00:07.560404",
         "product": "Big Mac",
-        "price": 2650.00
+        "price": 7200.0
     },
     {
         "country": "ar",
-        "ts": "2023-11-26T10:00:55.468195",
+        "ts": "2024-12-01T11:00:07.278270",
         "product": "Big Mac",
-        "price": 2650.00
+        "price": 7200.0
     },
     {
         "country": "ar",
-        "ts": "2023-11-27T10:00:57.093774",
+        "ts": "2024-12-02T11:00:08.434379",
         "product": "Big Mac",
-        "price": 2650.00
+        "price": 7200.0
     },
     {
         "country": "ar",
-        "ts": "2023-11-28T10:02:02.413210",
+        "ts": "2024-12-03T11:00:07.480886",
         "product": "Big Mac",
-        "price": 2850.00
+        "price": 7300.0
     },
     {
         "country": "ar",
-        "ts": "2023-11-29T10:00:58.071206",
+        "ts": "2024-12-04T11:00:07.814137",
         "product": "Big Mac",
-        "price": 2850.00
+        "price": 7300.0
     },
     {
         "country": "ar",
-        "ts": "2023-11-30T10:01:00.678716",
+        "ts": "2024-12-05T11:00:06.665292",
         "product": "Big Mac",
-        "price": 2850.00
+        "price": 7300.0
     },
     {
         "country": "ar",
-        "ts": "2023-12-01T10:01:05.524934",
+        "ts": "2024-12-06T11:00:10.449036",
         "product": "Big Mac",
-        "price": 2850.00
+        "price": 7300.0
     },
     {
         "country": "ar",
-        "ts": "2023-12-02T10:00:57.120881",
+        "ts": "2024-12-07T11:00:06.929117",
         "product": "Big Mac",
-        "price": 2850.00
+        "price": 7300.0
     },
     {
         "country": "ar",
-        "ts": "2023-12-03T10:00:57.212537",
+        "ts": "2024-12-08T11:00:11.284917",
         "product": "Big Mac",
-        "price": 2850.00
+        "price": 7300.0
     },
     {
         "country": "ar",
-        "ts": "2023-12-03T21:54:07.375825",
+        "ts": "2024-12-09T11:00:12.661093",
         "product": "Big Mac",
-        "price": 2850.00
+        "price": 7300.0
     },
     {
         "country": "ar",
-        "ts": "2023-12-03T21:54:14.875838",
+        "ts": "2024-12-10T11:00:06.721142",
         "product": "Big Mac",
-        "price": 2850.00
+        "price": 7300.0
     },
     {
         "country": "ar",
-        "ts": "2023-12-04T10:00:59.420228",
+        "ts": "2024-12-11T11:00:07.218359",
         "product": "Big Mac",
-        "price": 2850.00
+        "price": 7300.0
     },
     {
         "country": "ar",
-        "ts": "2023-12-05T10:01:01.994867",
+        "ts": "2024-12-12T11:00:06.986049",
         "product": "Big Mac",
-        "price": 2850.00
+        "price": 7300.0
     },
     {
         "country": "ar",
-        "ts": "2023-12-06T10:00:59.603831",
+        "ts": "2024-12-13T11:00:07.593732",
         "product": "Big Mac",
-        "price": 2850.00
+        "price": 7300.0
     },
     {
         "country": "ar",
-        "ts": "2023-12-08T10:00:57.993800",
+        "ts": "2024-12-14T11:00:07.211893",
         "product": "Big Mac",
-        "price": 2850.00
+        "price": 7300.0
     },
     {
         "country": "ar",
-        "ts": "2023-12-09T13:10:30.894570",
+        "ts": "2024-12-15T11:00:07.046592",
         "product": "Big Mac",
-        "price": 2850.00
+        "price": 7300.0
     },
     {
         "country": "ar",
-        "ts": "2023-12-09T13:14:28.683094",
+        "ts": "2024-12-16T11:00:06.111044",
         "product": "Big Mac",
-        "price": 2850.00
+        "price": 7300.0
     },
     {
         "country": "ar",
-        "ts": "2023-12-13T10:27:04.404467",
+        "ts": "2024-12-17T11:00:07.794306",
         "product": "Big Mac",
-        "price": 2850.00
+        "price": 7300.0
     },
     {
         "country": "ar",
-        "ts": "2023-12-13T10:28:14.566498",
+        "ts": "2024-12-18T11:00:06.729777",
         "product": "Big Mac",
-        "price": 2850.00
+        "price": 7300.0
     },
     {
         "country": "ar",
-        "ts": "2023-12-13T10:30:38.432650",
+        "ts": "2024-12-19T11:00:05.964765",
         "product": "Big Mac",
-        "price": 2850.00
+        "price": 7300.0
     },
     {
         "country": "ar",
-        "ts": "2023-12-13T10:31:38.759134",
+        "ts": "2024-12-20T11:00:08.009051",
         "product": "Big Mac",
-        "price": 2850.00
+        "price": 7300.0
     },
     {
         "country": "ar",
-        "ts": "2023-12-13T10:32:50.862115",
+        "ts": "2024-12-21T11:00:06.774324",
         "product": "Big Mac",
-        "price": 2850.00
+        "price": 7300.0
     },
     {
         "country": "ar",
-        "ts": "2023-12-14T13:00:19.838050",
+        "ts": "2024-12-22T11:00:07.588517",
         "product": "Big Mac",
-        "price": 2850.00
+        "price": 7300.0
     },
     {
         "country": "ar",
-        "ts": "2023-12-16T15:01:27.145165",
+        "ts": "2024-12-23T11:00:06.063145",
         "product": "Big Mac",
-        "price": 2850.00
+        "price": 7300.0
     },
     {
         "country": "ar",
-        "ts": "2023-12-16T15:08:38.921824",
+        "ts": "2024-12-24T11:00:06.897361",
         "product": "Big Mac",
-        "price": 2850.00
+        "price": 7300.0
     },
     {
         "country": "ar",
-        "ts": "2023-12-17T14:48:48.035682",
+        "ts": "2024-12-26T11:00:06.715895",
         "product": "Big Mac",
-        "price": 2850.00
+        "price": 7300.0
     },
     {
         "country": "ar",
-        "ts": "2023-12-17T14:48:50.023302",
+        "ts": "2024-12-27T11:00:07.973629",
         "product": "Big Mac",
-        "price": 2850.00
+        "price": 7300.0
     },
     {
         "country": "ar",
-        "ts": "2023-12-20T20:33:49.965259",
+        "ts": "2024-12-28T11:00:06.120572",
         "product": "Big Mac",
-        "price": 3250.00
+        "price": 7300.0
     },
     {
         "country": "ar",
-        "ts": "2023-12-20T20:33:54.035083",
+        "ts": "2024-12-29T11:00:07.009781",
         "product": "Big Mac",
-        "price": 3250.00
+        "price": 7300.0
     },
     {
         "country": "ar",
-        "ts": "2023-12-22T16:37:07.611915",
+        "ts": "2024-12-30T11:00:06.940703",
         "product": "Big Mac",
-        "price": 3250.00
+        "price": 7300.0
     },
     {
         "country": "ar",
-        "ts": "2023-12-22T16:39:04.930945",
+        "ts": "2024-12-31T11:00:07.272889",
         "product": "Big Mac",
-        "price": 3250.00
+        "price": 7300.0
     },
     {
         "country": "ar",
-        "ts": "2023-12-22T16:40:32.307821",
+        "ts": "2025-01-02T11:00:12.429876",
         "product": "Big Mac",
-        "price": 3250.00
+        "price": 7300.0
     },
     {
         "country": "ar",
-        "ts": "2023-12-24T23:56:31.561815",
+        "ts": "2025-01-04T11:00:07.807619",
         "product": "Big Mac",
-        "price": 3700.00
+        "price": 7300.0
     },
     {
         "country": "ar",
-        "ts": "2023-12-24T23:56:33.470925",
+        "ts": "2025-01-05T11:00:05.705216",
         "product": "Big Mac",
-        "price": 3700.00
+        "price": 7300.0
     },
     {
         "country": "ar",
-        "ts": "2023-12-25T10:25:00.631883",
+        "ts": "2025-01-06T11:00:07.592574",
         "product": "Big Mac",
-        "price": 3250.00
+        "price": 7300.0
     },
     {
         "country": "ar",
-        "ts": "2023-12-25T10:25:02.699686",
+        "ts": "2025-01-07T11:00:06.627044",
         "product": "Big Mac",
-        "price": 3250.00
+        "price": 7300.0
     },
     {
         "country": "ar",
-        "ts": "2023-12-26T13:09:29.185314",
+        "ts": "2025-01-08T11:00:07.841211",
         "product": "Big Mac",
-        "price": 3250.00
+        "price": 7300.0
     },
     {
         "country": "ar",
-        "ts": "2023-12-27T16:38:16.485686",
+        "ts": "2025-01-09T11:00:05.778395",
         "product": "Big Mac",
-        "price": 3250.00
+        "price": 7300.0
     },
     {
         "country": "ar",
-        "ts": "2023-12-29T16:11:45.754649",
+        "ts": "2025-01-11T11:00:07.214962",
         "product": "Big Mac",
-        "price": 3250.00
+        "price": 7300.0
     },
     {
         "country": "ar",
-        "ts": "2023-12-29T16:11:45.752532",
+        "ts": "2025-01-12T11:00:24.349420",
         "product": "Big Mac",
-        "price": 3250.00
+        "price": 7300.0
     },
     {
         "country": "ar",
-        "ts": "2023-12-29T16:35:25.592606",
+        "ts": "2025-01-13T11:00:08.720295",
         "product": "Big Mac",
-        "price": 3250.00
+        "price": 7300.0
     },
     {
         "country": "ar",
-        "ts": "2023-12-30T12:31:50.961909",
+        "ts": "2025-01-14T11:00:06.615287",
         "product": "Big Mac",
-        "price": 3250.00
+        "price": 7300.0
     },
     {
         "country": "ar",
-        "ts": "2023-12-31T15:20:50.578648",
+        "ts": "2025-01-15T11:00:33.605255",
         "product": "Big Mac",
-        "price": 3250.00
+        "price": 7300.0
     },
     {
         "country": "ar",
-        "ts": "2023-12-31T15:20:48.155145",
+        "ts": "2025-01-16T11:00:07.612329",
         "product": "Big Mac",
-        "price": 3250.00
+        "price": 7300.0
     },
     {
         "country": "ar",
-        "ts": "2024-01-03T19:07:35.039300",
+        "ts": "2025-01-17T11:00:07.786677",
         "product": "Big Mac",
-        "price": 3250.00
+        "price": 7300.0
     },
     {
         "country": "ar",
-        "ts": "2024-01-03T19:14:57.879312",
+        "ts": "2025-01-18T11:00:27.527151",
         "product": "Big Mac",
-        "price": 3250.00
+        "price": 7300.0
     },
     {
         "country": "ar",
-        "ts": "2024-01-03T19:21:36.879160",
+        "ts": "2025-01-20T11:00:06.541222",
         "product": "Big Mac",
-        "price": 3250.00
+        "price": 7300.0
     },
     {
         "country": "ar",
-        "ts": "2024-01-03T19:23:11.893456",
+        "ts": "2025-01-21T11:00:07.711318",
         "product": "Big Mac",
-        "price": 3250.00
+        "price": 7300.0
     },
     {
         "country": "ar",
-        "ts": "2024-01-03T19:25:42.917379",
+        "ts": "2025-01-22T11:00:09.455354",
         "product": "Big Mac",
-        "price": 3250.00
+        "price": 7300.0
     },
     {
         "country": "ar",
-        "ts": "2024-01-03T19:26:57.610475",
+        "ts": "2025-01-23T11:00:07.274732",
         "product": "Big Mac",
-        "price": 3250.00
+        "price": 7300.0
     },
     {
         "country": "ar",
-        "ts": "2024-01-03T19:27:58.896903",
+        "ts": "2025-01-24T11:00:07.400224",
         "product": "Big Mac",
-        "price": 3250.00
+        "price": 7300.0
     },
     {
         "country": "ar",
-        "ts": "2024-01-03T19:29:14.038034",
+        "ts": "2025-01-25T11:00:07.929242",
         "product": "Big Mac",
-        "price": 3250.00
+        "price": 7300.0
     },
     {
         "country": "ar",
-        "ts": "2024-01-04T20:00:47.179249",
+        "ts": "2025-01-26T11:00:05.701256",
         "product": "Big Mac",
-        "price": 3700.00
+        "price": 7300.0
     },
     {
         "country": "ar",
-        "ts": "2024-01-04T20:15:56.821459",
+        "ts": "2025-01-28T11:00:06.797262",
         "product": "Big Mac",
-        "price": 3700.00
+        "price": 7300.0
     },
     {
         "country": "ar",
-        "ts": "2024-01-04T22:29:39.918478",
+        "ts": "2025-01-29T11:00:07.539884",
         "product": "Big Mac",
-        "price": 3700.00
+        "price": 7300.0
     },
     {
         "country": "ar",
-        "ts": "2024-01-06T15:53:26.629838",
+        "ts": "2025-01-30T11:00:05.994881",
         "product": "Big Mac",
-        "price": 3700.00
+        "price": 7300.0
     },
     {
         "country": "ar",
-        "ts": "2024-01-08T19:15:38.357409",
+        "ts": "2025-02-01T11:00:06.010260",
         "product": "Big Mac",
-        "price": 3700.00
+        "price": 7300.0
     },
     {
         "country": "ar",
-        "ts": "2024-01-08T19:29:59.168619",
+        "ts": "2025-02-02T11:00:20.979589",
         "product": "Big Mac",
-        "price": 3700.00
+        "price": 7300.0
     },
     {
         "country": "ar",
-        "ts": "2024-01-09T19:38:44.415620",
+        "ts": "2025-02-03T11:00:20.578027",
         "product": "Big Mac",
-        "price": 3700.00
+        "price": 7300.0
     },
     {
         "country": "ar",
-        "ts": "2024-01-09T19:38:47.578602",
+        "ts": "2025-02-04T11:00:09.909166",
         "product": "Big Mac",
-        "price": 3700.00
+        "price": 7300.0
     },
     {
         "country": "ar",
-        "ts": "2024-01-11T19:34:44.422144",
+        "ts": "2025-02-05T11:00:07.490039",
         "product": "Big Mac",
-        "price": 3700.00
+        "price": 7300.0
     },
     {
         "country": "ar",
-        "ts": "2024-01-11T19:34:49.862311",
+        "ts": "2025-02-06T11:00:07.792820",
         "product": "Big Mac",
-        "price": 3700.00
+        "price": 7300.0
+    },
+    {
+        "country": "ar",
+        "ts": "2025-02-07T11:00:07.124371",
+        "product": "Big Mac",
+        "price": 7300.0
+    },
+    {
+        "country": "ar",
+        "ts": "2025-02-08T11:00:08.623874",
+        "product": "Big Mac",
+        "price": 7300.0
+    },
+    {
+        "country": "ar",
+        "ts": "2025-02-09T11:00:33.068367",
+        "product": "Big Mac",
+        "price": 7300.0
+    },
+    {
+        "country": "ar",
+        "ts": "2025-02-10T11:00:11.598894",
+        "product": "Big Mac",
+        "price": 7300.0
+    },
+    {
+        "country": "ar",
+        "ts": "2025-02-11T11:00:12.461455",
+        "product": "Big Mac",
+        "price": 7300.0
+    },
+    {
+        "country": "ar",
+        "ts": "2025-02-12T11:00:10.047435",
+        "product": "Big Mac",
+        "price": 7300.0
+    },
+    {
+        "country": "ar",
+        "ts": "2025-02-13T11:00:10.020371",
+        "product": "Big Mac",
+        "price": 7300.0
+    },
+    {
+        "country": "ar",
+        "ts": "2025-02-14T11:00:19.470475",
+        "product": "Big Mac",
+        "price": 7300.0
+    },
+    {
+        "country": "ar",
+        "ts": "2025-02-15T11:00:28.595010",
+        "product": "Big Mac",
+        "price": 7300.0
+    },
+    {
+        "country": "ar",
+        "ts": "2025-02-17T11:00:08.257832",
+        "product": "Big Mac",
+        "price": 7300.0
+    },
+    {
+        "country": "ar",
+        "ts": "2025-02-18T11:00:06.772928",
+        "product": "Big Mac",
+        "price": 7300.0
+    },
+    {
+        "country": "ar",
+        "ts": "2025-02-19T11:00:07.420213",
+        "product": "Big Mac",
+        "price": 7300.0
+    },
+    {
+        "country": "ar",
+        "ts": "2025-02-20T11:00:15.099622",
+        "product": "Big Mac",
+        "price": 7300.0
+    },
+    {
+        "country": "ar",
+        "ts": "2025-02-21T11:00:06.811741",
+        "product": "Big Mac",
+        "price": 7300.0
+    },
+    {
+        "country": "ar",
+        "ts": "2025-02-22T11:00:25.824146",
+        "product": "Big Mac",
+        "price": 7300.0
+    },
+    {
+        "country": "ar",
+        "ts": "2025-02-23T11:00:05.719506",
+        "product": "Big Mac",
+        "price": 7300.0
+    },
+    {
+        "country": "ar",
+        "ts": "2025-02-24T11:00:15.306170",
+        "product": "Big Mac",
+        "price": 7300.0
+    },
+    {
+        "country": "ar",
+        "ts": "2025-02-25T11:00:10.919546",
+        "product": "Big Mac",
+        "price": 7300.0
+    },
+    {
+        "country": "ar",
+        "ts": "2025-02-27T11:00:06.547301",
+        "product": "Big Mac",
+        "price": 7300.0
+    },
+    {
+        "country": "ar",
+        "ts": "2025-02-28T11:00:09.132170",
+        "product": "Big Mac",
+        "price": 7300.0
+    },
+    {
+        "country": "ar",
+        "ts": "2025-03-02T11:00:06.224833",
+        "product": "Big Mac",
+        "price": 7300.0
     },
     {
         "country": "ar",
@@ -661,9 +787,69 @@
     },
     {
         "country": "ar",
+        "ts": "2024-01-03T19:14:57.879312",
+        "product": "Big Mac",
+        "price": " 3.250.00"
+    },
+    {
+        "country": "ar",
+        "ts": "2024-01-03T19:21:36.879160",
+        "product": "Big Mac",
+        "price": " 3.250.00"
+    },
+    {
+        "country": "ar",
+        "ts": "2024-01-03T19:23:11.893456",
+        "product": "Big Mac",
+        "price": " 3.250.00"
+    },
+    {
+        "country": "ar",
+        "ts": "2024-01-03T19:24:13.340951",
+        "product": "Big Mac",
+        "price": " 5.599.00"
+    },
+    {
+        "country": "ar",
+        "ts": "2024-01-03T19:25:42.917379",
+        "product": "Big Mac",
+        "price": " 3.250.00"
+    },
+    {
+        "country": "ar",
+        "ts": "2024-01-03T19:26:57.610475",
+        "product": "Big Mac",
+        "price": " 3.250.00"
+    },
+    {
+        "country": "ar",
+        "ts": "2024-01-03T19:27:58.896903",
+        "product": "Big Mac",
+        "price": " 3.250.00"
+    },
+    {
+        "country": "ar",
+        "ts": "2024-01-03T19:29:14.038034",
+        "product": "Big Mac",
+        "price": " 3.250.00"
+    },
+    {
+        "country": "ar",
+        "ts": "2024-01-03T19:30:27.328053",
+        "product": "Big Mac",
+        "price": " 5.599.00"
+    },
+    {
+        "country": "ar",
         "ts": "2024-01-04T20:00:47.179249",
         "product": "Big Mac",
         "price": " 3.700.00"
+    },
+    {
+        "country": "ar",
+        "ts": "2024-01-04T20:02:19.188294",
+        "product": "Big Mac",
+        "price": " 6.399.00"
     },
     {
         "country": "ar",
@@ -1394,19 +1580,19 @@
     {
         "country": "ar",
         "ts": "2024-06-17T22:04:05.011088",
-        "product": "Big Mac",
+        "product": "BigMac",
         "price": 6000.0
     },
     {
         "country": "ar",
         "ts": "2024-06-17T22:04:57.864926",
-        "product": "Big Mac",
+        "product": "BigMac",
         "price": 6000.0
     },
     {
         "country": "ar",
         "ts": "2024-06-17T22:05:16.190175",
-        "product": "Big Mac",
+        "product": "BigMac",
         "price": 6000.0
     },
     {
@@ -1796,13 +1982,25 @@
     {
         "country": "ar",
         "ts": "2024-11-16T12:05:22.805355",
-        "product": "Big Mac",
+        "product": "BigMac",
         "price": 7200.0
     },
     {
         "country": "ar",
         "ts": "2024-11-16T12:22:50.709002",
-        "product": "Big Mac",
+        "product": "BigMac",
+        "price": 7200.0
+    },
+    {
+        "country": "ar",
+        "ts": "2024-11-16T15:30:07.918856",
+        "product": "BigMac",
+        "price": 7200.0
+    },
+    {
+        "country": "ar",
+        "ts": "2024-11-17T11:00:06.372767",
+        "product": "BigMac",
         "price": 7200.0
     },
     {
@@ -3104,6 +3302,636 @@
     {
         "country": "ar",
         "ts": "2024-11-16T12:23:20.873397",
+        "product": "yerba-mate",
+        "price": 3570.0
+    },
+    {
+        "country": "ar",
+        "ts": "2024-11-17T10:00:16.639759",
+        "product": "yerba-mate",
+        "price": 3570.0
+    },
+    {
+        "country": "ar",
+        "ts": "2024-11-18T10:00:16.973163",
+        "product": "yerba-mate",
+        "price": 3570.0
+    },
+    {
+        "country": "ar",
+        "ts": "2024-11-19T10:00:16.497285",
+        "product": "yerba-mate",
+        "price": 3570.0
+    },
+    {
+        "country": "ar",
+        "ts": "2024-11-20T10:00:14.408050",
+        "product": "yerba-mate",
+        "price": 3570.0
+    },
+    {
+        "country": "ar",
+        "ts": "2024-11-21T10:00:13.930087",
+        "product": "yerba-mate",
+        "price": 3570.0
+    },
+    {
+        "country": "ar",
+        "ts": "2024-11-22T10:00:16.045967",
+        "product": "yerba-mate",
+        "price": 3570.0
+    },
+    {
+        "country": "ar",
+        "ts": "2024-11-23T10:00:45.700942",
+        "product": "yerba-mate",
+        "price": 3570.0
+    },
+    {
+        "country": "ar",
+        "ts": "2024-11-24T10:00:16.796727",
+        "product": "yerba-mate",
+        "price": 3570.0
+    },
+    {
+        "country": "ar",
+        "ts": "2024-11-25T10:00:13.905574",
+        "product": "yerba-mate",
+        "price": 3570.0
+    },
+    {
+        "country": "ar",
+        "ts": "2024-11-26T10:00:14.608029",
+        "product": "yerba-mate",
+        "price": 3570.0
+    },
+    {
+        "country": "ar",
+        "ts": "2024-11-27T10:00:15.778663",
+        "product": "yerba-mate",
+        "price": 3570.0
+    },
+    {
+        "country": "ar",
+        "ts": "2024-11-28T10:00:14.160612",
+        "product": "yerba-mate",
+        "price": 3570.0
+    },
+    {
+        "country": "ar",
+        "ts": "2024-11-29T10:00:16.830751",
+        "product": "yerba-mate",
+        "price": 3570.0
+    },
+    {
+        "country": "ar",
+        "ts": "2024-11-30T10:00:16.130733",
+        "product": "yerba-mate",
+        "price": 3719.0
+    },
+    {
+        "country": "ar",
+        "ts": "2024-12-01T10:00:15.340310",
+        "product": "yerba-mate",
+        "price": 3719.0
+    },
+    {
+        "country": "ar",
+        "ts": "2024-12-02T10:00:16.088559",
+        "product": "yerba-mate",
+        "price": 3719.0
+    },
+    {
+        "country": "ar",
+        "ts": "2024-12-03T10:00:16.693024",
+        "product": "yerba-mate",
+        "price": 3719.0
+    },
+    {
+        "country": "ar",
+        "ts": "2024-12-04T10:00:16.061689",
+        "product": "yerba-mate",
+        "price": 3719.0
+    },
+    {
+        "country": "ar",
+        "ts": "2024-12-05T10:00:24.987366",
+        "product": "yerba-mate",
+        "price": 3719.0
+    },
+    {
+        "country": "ar",
+        "ts": "2024-12-06T10:00:16.100261",
+        "product": "yerba-mate",
+        "price": 3875.0
+    },
+    {
+        "country": "ar",
+        "ts": "2024-12-07T10:00:16.878647",
+        "product": "yerba-mate",
+        "price": 3875.0
+    },
+    {
+        "country": "ar",
+        "ts": "2024-12-08T10:00:13.643501",
+        "product": "yerba-mate",
+        "price": 3875.0
+    },
+    {
+        "country": "ar",
+        "ts": "2024-12-09T10:00:16.534099",
+        "product": "yerba-mate",
+        "price": 3875.0
+    },
+    {
+        "country": "ar",
+        "ts": "2024-12-10T10:00:16.243855",
+        "product": "yerba-mate",
+        "price": 3875.0
+    },
+    {
+        "country": "ar",
+        "ts": "2024-12-11T10:00:18.211302",
+        "product": "yerba-mate",
+        "price": 3875.0
+    },
+    {
+        "country": "ar",
+        "ts": "2024-12-12T10:00:15.666576",
+        "product": "yerba-mate",
+        "price": 3875.0
+    },
+    {
+        "country": "ar",
+        "ts": "2024-12-13T10:00:14.433183",
+        "product": "yerba-mate",
+        "price": 3570.0
+    },
+    {
+        "country": "ar",
+        "ts": "2024-12-14T10:00:16.757086",
+        "product": "yerba-mate",
+        "price": 3570.0
+    },
+    {
+        "country": "ar",
+        "ts": "2024-12-15T10:00:16.521577",
+        "product": "yerba-mate",
+        "price": 3570.0
+    },
+    {
+        "country": "ar",
+        "ts": "2024-12-16T10:00:13.931495",
+        "product": "yerba-mate",
+        "price": 3570.0
+    },
+    {
+        "country": "ar",
+        "ts": "2024-12-17T10:00:20.906020",
+        "product": "yerba-mate",
+        "price": 3570.0
+    },
+    {
+        "country": "ar",
+        "ts": "2024-12-18T10:00:15.737575",
+        "product": "yerba-mate",
+        "price": 3570.0
+    },
+    {
+        "country": "ar",
+        "ts": "2024-12-19T10:00:15.609977",
+        "product": "yerba-mate",
+        "price": 3570.0
+    },
+    {
+        "country": "ar",
+        "ts": "2024-12-20T10:00:15.279005",
+        "product": "yerba-mate",
+        "price": 3570.0
+    },
+    {
+        "country": "ar",
+        "ts": "2024-12-21T10:00:15.280605",
+        "product": "yerba-mate",
+        "price": 3570.0
+    },
+    {
+        "country": "ar",
+        "ts": "2024-12-22T10:00:17.188700",
+        "product": "yerba-mate",
+        "price": 3570.0
+    },
+    {
+        "country": "ar",
+        "ts": "2024-12-23T10:00:15.555963",
+        "product": "yerba-mate",
+        "price": 3570.0
+    },
+    {
+        "country": "ar",
+        "ts": "2024-12-25T10:00:14.172785",
+        "product": "yerba-mate",
+        "price": 3570.0
+    },
+    {
+        "country": "ar",
+        "ts": "2024-12-26T10:00:14.812447",
+        "product": "yerba-mate",
+        "price": 3570.0
+    },
+    {
+        "country": "ar",
+        "ts": "2024-12-27T10:00:15.688449",
+        "product": "yerba-mate",
+        "price": 3570.0
+    },
+    {
+        "country": "ar",
+        "ts": "2024-12-28T10:00:21.554201",
+        "product": "yerba-mate",
+        "price": 3570.0
+    },
+    {
+        "country": "ar",
+        "ts": "2024-12-29T10:00:15.268368",
+        "product": "yerba-mate",
+        "price": 3570.0
+    },
+    {
+        "country": "ar",
+        "ts": "2024-12-30T10:00:15.749767",
+        "product": "yerba-mate",
+        "price": 3570.0
+    },
+    {
+        "country": "ar",
+        "ts": "2024-12-31T10:00:15.456017",
+        "product": "yerba-mate",
+        "price": 3570.0
+    },
+    {
+        "country": "ar",
+        "ts": "2025-01-01T10:00:15.081832",
+        "product": "yerba-mate",
+        "price": 3570.0
+    },
+    {
+        "country": "ar",
+        "ts": "2025-01-02T10:00:16.506242",
+        "product": "yerba-mate",
+        "price": 3570.0
+    },
+    {
+        "country": "ar",
+        "ts": "2025-01-03T10:00:15.864566",
+        "product": "yerba-mate",
+        "price": 3570.0
+    },
+    {
+        "country": "ar",
+        "ts": "2025-01-04T10:00:13.923826",
+        "product": "yerba-mate",
+        "price": 3570.0
+    },
+    {
+        "country": "ar",
+        "ts": "2025-01-05T10:00:15.667848",
+        "product": "yerba-mate",
+        "price": 3570.0
+    },
+    {
+        "country": "ar",
+        "ts": "2025-01-06T10:00:16.279610",
+        "product": "yerba-mate",
+        "price": 3570.0
+    },
+    {
+        "country": "ar",
+        "ts": "2025-01-07T10:00:13.571639",
+        "product": "yerba-mate",
+        "price": 3570.0
+    },
+    {
+        "country": "ar",
+        "ts": "2025-01-08T10:00:16.577434",
+        "product": "yerba-mate",
+        "price": 3570.0
+    },
+    {
+        "country": "ar",
+        "ts": "2025-01-09T10:00:14.355511",
+        "product": "yerba-mate",
+        "price": 3570.0
+    },
+    {
+        "country": "ar",
+        "ts": "2025-01-10T10:00:16.205878",
+        "product": "yerba-mate",
+        "price": 3570.0
+    },
+    {
+        "country": "ar",
+        "ts": "2025-01-11T10:00:17.392629",
+        "product": "yerba-mate",
+        "price": 3570.0
+    },
+    {
+        "country": "ar",
+        "ts": "2025-01-12T10:00:16.062134",
+        "product": "yerba-mate",
+        "price": 3570.0
+    },
+    {
+        "country": "ar",
+        "ts": "2025-01-13T10:00:16.357720",
+        "product": "yerba-mate",
+        "price": 3570.0
+    },
+    {
+        "country": "ar",
+        "ts": "2025-01-14T10:00:16.075835",
+        "product": "yerba-mate",
+        "price": 3570.0
+    },
+    {
+        "country": "ar",
+        "ts": "2025-01-15T10:00:15.591334",
+        "product": "yerba-mate",
+        "price": 3570.0
+    },
+    {
+        "country": "ar",
+        "ts": "2025-01-16T10:00:17.301059",
+        "product": "yerba-mate",
+        "price": 3570.0
+    },
+    {
+        "country": "ar",
+        "ts": "2025-01-17T10:00:17.045111",
+        "product": "yerba-mate",
+        "price": 3570.0
+    },
+    {
+        "country": "ar",
+        "ts": "2025-01-18T10:00:15.794551",
+        "product": "yerba-mate",
+        "price": 3570.0
+    },
+    {
+        "country": "ar",
+        "ts": "2025-01-19T10:00:15.721973",
+        "product": "yerba-mate",
+        "price": 3570.0
+    },
+    {
+        "country": "ar",
+        "ts": "2025-01-20T10:00:16.755318",
+        "product": "yerba-mate",
+        "price": 3570.0
+    },
+    {
+        "country": "ar",
+        "ts": "2025-01-21T10:00:15.630758",
+        "product": "yerba-mate",
+        "price": 3570.0
+    },
+    {
+        "country": "ar",
+        "ts": "2025-01-22T10:00:16.152802",
+        "product": "yerba-mate",
+        "price": 3570.0
+    },
+    {
+        "country": "ar",
+        "ts": "2025-01-23T10:00:15.871366",
+        "product": "yerba-mate",
+        "price": 3570.0
+    },
+    {
+        "country": "ar",
+        "ts": "2025-01-24T10:00:15.309343",
+        "product": "yerba-mate",
+        "price": 3570.0
+    },
+    {
+        "country": "ar",
+        "ts": "2025-01-25T10:00:18.018792",
+        "product": "yerba-mate",
+        "price": 3570.0
+    },
+    {
+        "country": "ar",
+        "ts": "2025-01-26T10:00:14.468233",
+        "product": "yerba-mate",
+        "price": 3570.0
+    },
+    {
+        "country": "ar",
+        "ts": "2025-01-27T10:00:16.997819",
+        "product": "yerba-mate",
+        "price": 3570.0
+    },
+    {
+        "country": "ar",
+        "ts": "2025-01-28T10:00:19.719375",
+        "product": "yerba-mate",
+        "price": 3570.0
+    },
+    {
+        "country": "ar",
+        "ts": "2025-01-29T10:00:14.723786",
+        "product": "yerba-mate",
+        "price": 3570.0
+    },
+    {
+        "country": "ar",
+        "ts": "2025-01-30T10:00:14.486324",
+        "product": "yerba-mate",
+        "price": 3570.0
+    },
+    {
+        "country": "ar",
+        "ts": "2025-01-31T10:00:15.374672",
+        "product": "yerba-mate",
+        "price": 3570.0
+    },
+    {
+        "country": "ar",
+        "ts": "2025-02-01T10:00:15.402557",
+        "product": "yerba-mate",
+        "price": 3570.0
+    },
+    {
+        "country": "ar",
+        "ts": "2025-02-02T10:00:16.257899",
+        "product": "yerba-mate",
+        "price": 3570.0
+    },
+    {
+        "country": "ar",
+        "ts": "2025-02-03T10:00:15.921587",
+        "product": "yerba-mate",
+        "price": 3570.0
+    },
+    {
+        "country": "ar",
+        "ts": "2025-02-04T10:00:20.316942",
+        "product": "yerba-mate",
+        "price": 3570.0
+    },
+    {
+        "country": "ar",
+        "ts": "2025-02-05T10:00:16.346191",
+        "product": "yerba-mate",
+        "price": 3570.0
+    },
+    {
+        "country": "ar",
+        "ts": "2025-02-06T10:00:18.954916",
+        "product": "yerba-mate",
+        "price": 3570.0
+    },
+    {
+        "country": "ar",
+        "ts": "2025-02-07T10:00:16.276212",
+        "product": "yerba-mate",
+        "price": 3570.0
+    },
+    {
+        "country": "ar",
+        "ts": "2025-02-08T10:00:19.380597",
+        "product": "yerba-mate",
+        "price": 3570.0
+    },
+    {
+        "country": "ar",
+        "ts": "2025-02-09T10:00:16.011755",
+        "product": "yerba-mate",
+        "price": 3570.0
+    },
+    {
+        "country": "ar",
+        "ts": "2025-02-10T10:00:18.426282",
+        "product": "yerba-mate",
+        "price": 3570.0
+    },
+    {
+        "country": "ar",
+        "ts": "2025-02-11T10:00:16.134580",
+        "product": "yerba-mate",
+        "price": 3570.0
+    },
+    {
+        "country": "ar",
+        "ts": "2025-02-12T10:00:15.050416",
+        "product": "yerba-mate",
+        "price": 3570.0
+    },
+    {
+        "country": "ar",
+        "ts": "2025-02-13T10:00:16.833933",
+        "product": "yerba-mate",
+        "price": 3570.0
+    },
+    {
+        "country": "ar",
+        "ts": "2025-02-14T10:00:16.313034",
+        "product": "yerba-mate",
+        "price": 3570.0
+    },
+    {
+        "country": "ar",
+        "ts": "2025-02-15T10:00:15.667193",
+        "product": "yerba-mate",
+        "price": 3570.0
+    },
+    {
+        "country": "ar",
+        "ts": "2025-02-16T10:00:16.364323",
+        "product": "yerba-mate",
+        "price": 3570.0
+    },
+    {
+        "country": "ar",
+        "ts": "2025-02-17T10:00:14.315077",
+        "product": "yerba-mate",
+        "price": 3570.0
+    },
+    {
+        "country": "ar",
+        "ts": "2025-02-18T10:00:15.553905",
+        "product": "yerba-mate",
+        "price": 3570.0
+    },
+    {
+        "country": "ar",
+        "ts": "2025-02-19T10:00:14.967441",
+        "product": "yerba-mate",
+        "price": 3570.0
+    },
+    {
+        "country": "ar",
+        "ts": "2025-02-20T10:00:24.659619",
+        "product": "yerba-mate",
+        "price": 3570.0
+    },
+    {
+        "country": "ar",
+        "ts": "2025-02-21T10:00:16.240102",
+        "product": "yerba-mate",
+        "price": 3570.0
+    },
+    {
+        "country": "ar",
+        "ts": "2025-02-22T10:00:15.339111",
+        "product": "yerba-mate",
+        "price": 3570.0
+    },
+    {
+        "country": "ar",
+        "ts": "2025-02-23T10:00:16.388284",
+        "product": "yerba-mate",
+        "price": 3570.0
+    },
+    {
+        "country": "ar",
+        "ts": "2025-02-24T10:00:16.492536",
+        "product": "yerba-mate",
+        "price": 3570.0
+    },
+    {
+        "country": "ar",
+        "ts": "2025-02-25T10:00:15.534979",
+        "product": "yerba-mate",
+        "price": 3570.0
+    },
+    {
+        "country": "ar",
+        "ts": "2025-02-26T10:00:15.434823",
+        "product": "yerba-mate",
+        "price": 3570.0
+    },
+    {
+        "country": "ar",
+        "ts": "2025-02-27T10:00:15.616628",
+        "product": "yerba-mate",
+        "price": 3570.0
+    },
+    {
+        "country": "ar",
+        "ts": "2025-02-28T10:00:15.514317",
+        "product": "yerba-mate",
+        "price": 3570.0
+    },
+    {
+        "country": "ar",
+        "ts": "2025-03-01T10:00:15.704358",
+        "product": "yerba-mate",
+        "price": 3570.0
+    },
+    {
+        "country": "ar",
+        "ts": "2025-03-02T10:00:15.780236",
         "product": "yerba-mate",
         "price": 3570.0
     }
